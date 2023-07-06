@@ -36,30 +36,53 @@ body{
     border-radius: 0px 25px;
 }
 
-.container{
-    position: relative;
-}
-
 .login{
     text-align: center;
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .login h1{
+    color: #7895CB;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.login input{
-    margin: 20px;
-    padding: 10px;
-    width: 90%;
-    height: 30px;
+.login label{
+    color: #7895CB;
 }
 
 
+.login input{
+    outline: none;
+    color: #4A55A2;
+    border: 2px solid #4A55A2;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 40px;
+}
+
+.register{
+    margin-top: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    background-color: #4A55A2;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.register:hover{
+    transition: 1s;
+    background-color: #C5DFF8;
+    color: rgb(95, 91, 91);
+    cursor: pointer;
+}
+
 #crear_cuenta{
+    font-size: 15px;
+    color: #4A55A2;
     margin-top: 60px;
     border: none;
     cursor: pointer;
@@ -67,23 +90,50 @@ body{
 
 .registro{
     text-align: center;
-    position: relative;
     visibility: visible;
 }
 
 .registro h1{
+    color: #7895CB;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
+.registro label{
+    color: #7895CB;
+}
+
 .registro input{
+    outline: none;
+    color: #4A55A2;
+    border: 2px solid #4A55A2;
+    border-radius: 20px;
     margin: 20px;
     padding: 10px;
     width: 90%;
-    height: 30px;
+    height: 40px;
+}
+
+.crear{
+    margin-top: 10px;
+    font-size: 15px;
+    border: 2px solid rgb(136, 136, 136);
+    background-color: #4A55A2;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.crear:hover{
+    transition: 1s;
+    background-color: #C5DFF8;
+    color: rgb(95, 91, 91);
+    cursor: pointer;
 }
 
 #iniciar_sesion{
+    font-size: 15px;
+    color: #4A55A2;
     margin-top: 60px;
     border: none;
     cursor: pointer;

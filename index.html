@@ -9,12 +9,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
     </style>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="forms.php">
 </head>
 <body>
     <div class="container">
         <div class="border-1" style="height: 120px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
             <div class="contenedor">    
-                <div class="login">
+                <div class="login" id="login">
                     <form name="login" id="login" method="post" action="#" enctype="multipart/form-data">
                         <h1>INICIAR SESIÓN</h1>
                         <label for="email">Email</label>
@@ -27,7 +29,7 @@
                         Crear cuenta
                     </button>
                 </div>
-                <div class="registro">
+                <div class="registro" id="registro">
                     <form name="registro" id="registro" method="post" action="#" enctype="multipart/form-data">
                         <h1>REGISTRAR CUENTA</h1>
                         <label for="email">Email</label>
@@ -36,10 +38,15 @@
                         <input type="password" name="password" id="password" placeholder="Ingresar tu contraseña">
                         <button type="button" id="crear" name="crear" class="crear">Registrarse</button>
                     </form>
-                    <button id="iniciar_sesion">Iniciar sesión</button>
+                    <button id="iniciar_sesion">
+                        Iniciar sesión
+                    </button>
                 </div>
             </div>
         <div class="border-2" style="height: 120px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.25,90.30 C149.99,150.00 349.20,-49.98 500.00,80.44 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
     </div>
+
+    <script type="module" src="main.js"></script>
+    
 </body>
 </html> 
