@@ -12,7 +12,6 @@ const firebaseConfig = {
     measurementId: "G-5KWBX80BDV"
 };
 
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
@@ -39,8 +38,7 @@ document.getElementById("google").addEventListener("click", function () {
 
             // The signed-in user info.
             const user = result.user;
-            // IdP data available using getAdditionalUserInfo(result)
-            
+            // IdP data available using getAdditionalUserInfo(result)      
             // ...
         }).catch((error) => {
             // Handle Errors here.
@@ -52,6 +50,9 @@ document.getElementById("google").addEventListener("click", function () {
             const credential = GoogleAuthProvider.credentialFromError(error);
             // ...
         });
+
+        getRedirectResult(setTimeout( function() { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000 ))
+        
 });
 //Registro de cuenta
 
@@ -97,6 +98,9 @@ document.getElementById("register").addEventListener('click', function () {
             console.log("error en el inicio de sesion")
         });
 })
+
+
+
 
 
 
