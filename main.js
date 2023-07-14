@@ -32,25 +32,25 @@ document.getElementById("iniciar_sesion").addEventListener("click", function () 
 document.getElementById("google").addEventListener("click", function () {
     signInWithRedirect(auth, provider);
     getRedirectResult(auth)
-    .then((result) => {
-      // This gives you a Google Access Token. You can use it to access Google APIs.
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-  
-      // The signed-in user info.
-      const user = result.user;
-      // IdP data available using getAdditionalUserInfo(result)
-      // ...
-    }).catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // The email of the user's account used.
-      const email = error.customData.email;
-      // The AuthCredential type that was used.
-      const credential = GoogleAuthProvider.credentialFromError(error);
-      // ...
-    });
+        .then((result) => {
+            // This gives you a Google Access Token. You can use it to access Google APIs.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+
+            // The signed-in user info.
+            const user = result.user;
+            // IdP data available using getAdditionalUserInfo(result)
+            // ...
+        }).catch((error) => {
+            // Handle Errors here.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // The email of the user's account used.
+            const email = error.customData.email;
+            // The AuthCredential type that was used.
+            const credential = GoogleAuthProvider.credentialFromError(error);
+            // ...
+        });
 });
 //Registro de cuenta
 
@@ -65,7 +65,7 @@ document.getElementById("crear").addEventListener('click', function () {
             const user = userCredential.user;
             // ...
             console.log("Cuenta creada");
-            getRedirectResult(setTimeout( function() { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000 ))
+            getRedirectResult(setTimeout(function () { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000))
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -87,7 +87,7 @@ document.getElementById("register").addEventListener('click', function () {
             const user = userCredential.user;
             // ...
             console.log("Sesion iniciada");
-            getRedirectResult(setTimeout( function() { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000 ))
+            getRedirectResult(setTimeout(function () { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000))
         })
         .catch((error) => {
             const errorCode = error.code;
