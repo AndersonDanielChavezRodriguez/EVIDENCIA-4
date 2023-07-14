@@ -40,8 +40,7 @@ document.getElementById("google").addEventListener("click", function () {
             // The signed-in user info.
             const user = result.user;
             // IdP data available using getAdditionalUserInfo(result)
-            // ...}
-            getRedirectResult(setTimeout( function() { window.location.href = "https://andersondanielchavezrodriguez.github.io/TAREA-2/"; }, 2000 ))
+            // ...
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
