@@ -70,7 +70,7 @@ document.getElementById("crear").addEventListener('click', function () {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            // ..
+            // .
             console.log("error en el registro");
         });
 })
@@ -96,7 +96,6 @@ document.getElementById("register").addEventListener('click', function () {
             console.log("error en el inicio de sesion")
         });
 })
-
 
 
 
